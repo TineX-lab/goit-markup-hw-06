@@ -731,6 +731,7 @@ address {
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
+        margin-bottom: 48px;
     }
 
     .features-icon-container {
@@ -753,10 +754,15 @@ address {
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        color: #2e2f42;
     }
 
     .features-description {
-       font-weight: 400;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
     }
 
     .team-container {

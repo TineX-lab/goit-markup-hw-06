@@ -140,6 +140,13 @@ address {
     background-size: cover;
 }
 
+@media (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-mob@2x.jpg);
+    }
+}
+
 .hero-title {
     font-weight: 700;
     font-size: 36px;
@@ -472,6 +479,37 @@ address {
     pointer-events: auto;
 }
 
+.mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 72px 16px 40px 16px;
+    position: relative;
+}
+
+.mobile-nav {
+    margin-bottom: auto;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.mobile-socials-list {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
 .team-soc-icon,
 .footer-social-icon,
 .mobile-socials-icon {
@@ -711,8 +749,14 @@ address {
     }
 
     .features-subtitle {
-        font-size: 20px;
         font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .features-description {
+       font-weight: 400;
     }
 
     .team-container {

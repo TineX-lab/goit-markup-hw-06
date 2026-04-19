@@ -147,7 +147,7 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 320px;
+    max-width: 200px;
     margin: 0 auto 72px auto;
 }
 
@@ -449,7 +449,7 @@ address {
     min-height: 584px;
     background: #fcfcfc;
     border-radius: 4px;
-    padding: 72px 24px 24px;
+    padding: 72px 16px 24px 16px;
 }
 
 .mobile-menu {
@@ -478,6 +478,13 @@ address {
     fill: #fff;
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-tablet@2x.jpg);
+    }
+}
+
 @media screen and (max-width: 767px) {
     .footer-logo {
         display: block;
@@ -496,6 +503,10 @@ address {
         display: none;
     }
 
+    .mobile-menu {
+        display: none;
+    }
+
     .nav-list,
     .contacts {
         display: flex;
@@ -509,7 +520,7 @@ address {
     .nav-list {
         display: flex;
         gap: 40px;
-        margin-left: 76px;
+        margin-left: 120px;
     }
 
     .nav-link {
@@ -633,6 +644,14 @@ address {
 
     .modal {
         width: 408px;
+        padding: 72px 24px 24px 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-desktop@2x.jpg);
     }
 }
 
@@ -655,11 +674,21 @@ address {
         font-size: 16px;
     }
 
+    .nav-list {
+        margin-left: 76px;
+    }
+
     .hero {
         padding: 188px 0;
         max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office.jpg);
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
     }
 
     .features-icon-container {
@@ -691,7 +720,15 @@ address {
     }
 
     .portfolio-item {
+        box-shadow: none;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         width: calc((100% - 48px) / 3);
+    }
+
+    .portfolio-item:hover {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 
     .footer {
@@ -715,5 +752,10 @@ address {
     
     .footer-subscribe-wrapper {
         margin-left: auto;
+    }
+
+    .modal {
+        width: 408px;
+        padding: 72px 24px 24px 24px;
     }
 }

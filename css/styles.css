@@ -147,8 +147,8 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 200px;
-    margin: 0 auto 72px auto;
+    max-width: 320px;
+    margin: 0 auto 48px;
 }
 
 .hero-button {
@@ -481,7 +481,7 @@ address {
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people-office-tablet@2x.jpg);
+            url(../images/hero-tab@2x.jpg);
     }
 }
 
@@ -599,9 +599,10 @@ address {
     }
 
     .portfolio-list {
-        flex-direction: row;
+        display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
+        row-gap: 72px;
     }
 
     .portfolio-item {
@@ -648,10 +649,17 @@ address {
     }
 }
 
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-mob@2x.jpg);
+    }
+}
+
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people-office-desktop@2x.jpg);
+            url(../images/hero-desk@2x.jpg);
     }
 }
 
@@ -672,6 +680,8 @@ address {
 
     .contacts-link {
         font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
 
     .nav-list {
@@ -682,7 +692,7 @@ address {
         padding: 188px 0;
         max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people-office.jpg);
+            url(../images/hero-desk.jpg);
     }
 
     .hero-title {
